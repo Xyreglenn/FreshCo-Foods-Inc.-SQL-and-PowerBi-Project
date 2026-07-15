@@ -5,9 +5,15 @@ A comprehensive inventory management dashboard for FreshCo Foods Inc., designed 
 
 ## Technologies Used
 
-SQL (MySQL/PostgreSQL/etc.): Used for data cleaning, joining fact/dimension tables, and performing initial aggregations.
+SQL: For querying and manipulating the database.
 
-Power BI: Used for data modeling (Star Schema) and building interactive visualizations.
+Power BI: For creating interactive dashboards.
+
+MySQL: As the database management system.
+
+Excel: For data manipulation and analysis.
+
+Power BI Desktop: For developing reports and dashboards.
 
 ## Key Insights
 
