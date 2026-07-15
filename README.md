@@ -1,43 +1,90 @@
-# Project Title: FreshCo Foods Inventory Analytics Dashboard
+# FreshCo Foods Inc. — Inventory Management Dashboard
+### SQL + Power BI · Cold Storage Inventory Analytics
+
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black)
+![SQL](https://img.shields.io/badge/SQL-SQLite-003B57?style=flat&logo=sqlite&logoColor=white)
 
 ## Overview
 A comprehensive inventory management dashboard for FreshCo Foods Inc., designed to monitor stock levels, analyze expiry risks, and optimize warehouse utilization.
 
-## Technologies Used
+## Business Question
+How much inventory value is quietly sitting at expiry risk inside a cold
+storage facility — and is the warehouse running out of space before
+management even notices?
 
-SQL: For querying and manipulating the database.
+## Key Findings
+| Metric | Value |
+|---|---|
+| Total Inventory Value | ₱102.15M |
+| Confirmed Expired Stock | ₱1.00M (87 pallets still marked Available) |
+| Critical At-Risk (0–30 days) | ₱10.45M · 1,004 pallets |
+| % Inventory At Risk | 12.23% |
+| Warehouses Near Capacity | 3 of 5 (Cold Storage A at 97.28%) |
+| Total Pallets | 8,921 · 445,289 boxes |
 
-Power BI: For creating interactive dashboards.
+## Dashboard Pages
+| Page | Business Question Answered |
+|---|---|
+| Executive Overview | What is the current financial state of inventory? |
+| Inventory | What do we have, where, and how much is it worth? |
+| Expiry | Which pallets are at risk and which SKUs are the problem? |
+| Utilization | How full is each warehouse and where is space wasted? |
 
-MySQL: As the database management system.
+## Dashboard Screenshots
+**Executive Overview** <img width="1628" height="910" alt="image" src="https://github.com/user-attachments/assets/32916f55-fda2-45a7-80d3-01e68b2f37d2" />
 
-Excel: For data manipulation and analysis.
+**Inventory Page** <img width="1628" height="912" alt="image" src="https://github.com/user-attachments/assets/217c64a1-6832-48d5-b0b4-f89d24abb021" />
 
-Power BI Desktop: For developing reports and dashboards.
+**Expiry Page** <img width="1625" height="912" alt="image" src="https://github.com/user-attachments/assets/2ec5b3e8-bdb1-4abf-894b-4667e8827c6a" />
 
-## Key Insights
+**Utilization Page** <img width="1626" height="913" alt="image" src="https://github.com/user-attachments/assets/2a987a12-d912-4515-8da1-4c348d5be68d" />
 
-Total Inventory Value: ₱102.15M.
-
-Identified $10.45M worth of stock nearing expiry.
-
-Optimized warehouse space, highlighting critical utilization levels in "Cold Storage A."
 
 ## Project Structure
+```
+freshco-inventory-dashboard/
+├── data/
+│   ├── inventory_data.csv       # Anonymized dataset (8,921 rows)
+│   └── data_dictionary.md       # Column definitions
+├── sql/
+│   └── dashboard_queries.sql # 15+ analytical queries   
+├── screenshots/                 # Dashboard page screenshots
+├── dashboard/
+│   └── FreshCo_Inventory_Dashboard.pbix
+└── README.md
+```
 
-/data: Raw datasets used for the analysis.
+## Tools Used
+- **SQL (SQLite)** — schema design, data cleaning, analytical queries
+- **Power BI Desktop** — data modeling, DAX measures, dashboard design
+- **DAX** — custom measures for value at risk, utilization %, expiry KPIs
 
-/sql: SQL scripts for data preparation and querying.
+## DAX Measures Used
+```dax
+-- % of inventory value at risk
+% Inventory At Risk =
+DIVIDE(
+    CALCULATE(SUM(inventory[TOTAL_VALUE]),
+              inventory[EXPIRY_RISK] IN {"1. Expired","2. Critical (0-30d)"}),
+    SUM(inventory[TOTAL_VALUE]),
+    0
+)
 
-/dashboard.pbix: The final interactive Power BI file.
+-- Warehouses near capacity = COUNTROWS(
+    FILTER(
+        'Warehouse Utilization',
+        'Warehouse Utilization'[Utilization] >= 0.9
+)
+```
 
-## Contact
-For any questions or suggestions, feel free to reach out:
+## Data Notes
+- Dataset is **fully anonymized** , generated to mirror real cold storage
+  WMS operations. No real company data, client names, or identifiable
+  information is present.
+- 8,921 pallet-level records across 5 warehouses and 17 SKUs
+- Snapshot date: June 17, 2026
 
-Xyrus Glenn T. Buenaventura
-
-Gmail: xyrusglennbuenaventura3105@gmail.com
-
-Github: https://github.com/Xyreglenn
-
-Linkedin: https://www.linkedin.com/in/xyrus-glenn-buenaventura-clssyb-so2-b19a40276/
+## Author
+**Xyrus Glenn T. Buenaventura**
+Industrial Engineer · Inventory Analyst · Aspiring Supply Chain Data Analyst
+[LinkedIn](https://www.linkedin.com/in/xyrus-glenn-buenaventura-clssyb-so2-b19a40276/) · [GitHub](https://github.com/Xyreglenn)
