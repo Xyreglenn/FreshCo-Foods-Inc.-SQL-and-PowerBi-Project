@@ -31,14 +31,13 @@ management even notices?
 | Utilization | How full is each warehouse and where is space wasted? |
 
 ## Dashboard Screenshots
-**Executive Overview** <img width="1628" height="910" alt="image" src="https://github.com/user-attachments/assets/32916f55-fda2-45a7-80d3-01e68b2f37d2" />
+**Executive Overview** <img width="1628" height="910" alt="image" src="https://github.com/user-attachments/assets/73edc2a9-b329-4ddc-96da-db9b3ffcbad2" />
 
-**Inventory Page** <img width="1628" height="912" alt="image" src="https://github.com/user-attachments/assets/217c64a1-6832-48d5-b0b4-f89d24abb021" />
+**Inventory Page** <<img width="1625" height="912" alt="image" src="https://github.com/user-attachments/assets/72b933b6-48a8-43c3-8d98-902a72ed4922" />
 
-**Expiry Page** <img width="1625" height="912" alt="image" src="https://github.com/user-attachments/assets/2ec5b3e8-bdb1-4abf-894b-4667e8827c6a" />
+**Expiry Page** <img width="1628" height="912" alt="image" src="https://github.com/user-attachments/assets/b82b1473-6385-441b-a596-30d694f6c897" />
 
-**Utilization Page** <img width="1626" height="913" alt="image" src="https://github.com/user-attachments/assets/2a987a12-d912-4515-8da1-4c348d5be68d" />
-
+**Utilization Page** <img width="1626" height="913" alt="image" src="https://github.com/user-attachments/assets/6fc92508-f034-4ce9-a067-114b9b3a4114" />
 
 ## Project Structure
 ```
