@@ -26,8 +26,11 @@ Optimized warehouse space, highlighting critical utilization levels in "Cold Sto
 /dashboard.pbix: The final interactive Power BI file.
 
 ## Contact
+For any questions or suggestions, feel free to reach out:
 
 Xyrus Glenn T. Buenaventura
+
+Gmail: xyrusglennbuenaventura3105@gmail.com
 
 Github: https://github.com/Xyreglenn
 
