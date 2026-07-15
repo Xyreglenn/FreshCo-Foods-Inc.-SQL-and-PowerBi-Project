@@ -33,7 +33,7 @@ management even notices?
 ## Dashboard Screenshots
 **Executive Overview** <img width="1628" height="910" alt="image" src="https://github.com/user-attachments/assets/73edc2a9-b329-4ddc-96da-db9b3ffcbad2" />
 
-**Inventory Page** <<img width="1625" height="912" alt="image" src="https://github.com/user-attachments/assets/72b933b6-48a8-43c3-8d98-902a72ed4922" />
+**Inventory Page** <img width="1625" height="912" alt="image" src="https://github.com/user-attachments/assets/72b933b6-48a8-43c3-8d98-902a72ed4922" />
 
 **Expiry Page** <img width="1628" height="912" alt="image" src="https://github.com/user-attachments/assets/b82b1473-6385-441b-a596-30d694f6c897" />
 
