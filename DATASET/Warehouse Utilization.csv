@@ -1,6 +1,0 @@
-WAREHOUSE_NAME,Count of PALLET_ID,Capacity,Available Location,Warehouse Utilization,Availble Space
-Cold Storage A - Poultry,3502,3600,98,0.9728,0.0272
-Cold Storage B - Beef & Pork,2142,2300,158,0.9313,0.0687
-Cold Storage C - Dairy,1074,1500,426,0.716,0.284
-Freezer D - Mixed,1693,1850,157,0.9151,0.0849
-Staging / Receiving,510,3000,2490,0.17,0.83
