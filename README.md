@@ -28,5 +28,5 @@ Optimized warehouse space, highlighting critical utilization levels in "Cold Sto
 ## Contact
 
 Xyrus Glenn T. Buenaventura
-
-https://www.linkedin.com/in/xyrus-glenn-buenaventura-clssyb-so2-b19a40276/
+Github: https://github.com/Xyreglenn
+Linkedin: https://www.linkedin.com/in/xyrus-glenn-buenaventura-clssyb-so2-b19a40276/
